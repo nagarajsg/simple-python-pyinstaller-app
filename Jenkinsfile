@@ -4,7 +4,7 @@ pipeline {
     agent none
     stages {
         stage('Build') {
-            agent none
+            agent any
             //{
 //                 docker {
 //                     //This image parameter (of the agent section’s docker parameter) downloads the python:2-alpine
