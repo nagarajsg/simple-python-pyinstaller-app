@@ -21,7 +21,8 @@ pipeline {
                 //unit tests (defined in test_calc.py) on the "calc" library’s add2 function.
                 //The --junit-xml test-reports/results.xml option makes py.test generate a JUnit XML report,
                 //which is saved to test-reports/results.xml
-                sh 'py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
+                
+                sh 'pytest --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
             }
             post {
                 always {
