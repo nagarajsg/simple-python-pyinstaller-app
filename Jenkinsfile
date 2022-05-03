@@ -22,7 +22,7 @@ pipeline {
                 //The --junit-xml test-reports/results.xml option makes py.test generate a JUnit XML report,
                 //which is saved to test-reports/results.xml
                 
-                sh 'python3 pytest  sources/test_calc.py'
+                sh 'python3 -m unittest  sources/test_calc.py'
             }
            
         }
