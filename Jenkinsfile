@@ -22,7 +22,7 @@ pipeline {
                 //The --junit-xml test-reports/results.xml option makes py.test generate a JUnit XML report,
                 //which is saved to test-reports/results.xml
                 
-                sh 'pytest --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
+                sh 'python3 pytest --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
             }
             post {
                 always {
